@@ -1,0 +1,27 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+
+    <div class="col">
+
+        <!-- Le mando en la variables INPUT DEL HIJO mi Variables de personaje, de casualidad se llaman Ingual-->
+        <app-personajes [personajesInput]="personajes"></app-personajes>
+        
+        
+        
+    </div>    
+
+
+    <div class="col">
+        
+        <app-agregrar-personaje 
+            [nuevo]="nuevo" 
+            (onNuevoPersonaje)="agregarNuevoPersonaje( $event )"
+        ></app-agregrar-personaje>
+
+   </div>
+
+
+</div>
+
